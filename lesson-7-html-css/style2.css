@@ -1,0 +1,16 @@
+li {
+    color: black;
+}
+
+a[href*="by"] {
+    color: #f70;
+}
+
+a[href*="google"] {
+    color: #666;
+}
+
+ .a{
+    transform: rotateY(180deg);
+     text-align: right;
+}
