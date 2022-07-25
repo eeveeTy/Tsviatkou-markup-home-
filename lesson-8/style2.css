@@ -1,0 +1,35 @@
+
+ul {
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0;
+    padding-left: 40px;
+    background: #a74cff;
+    height: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    background: #a74cff;
+    color: #fff;
+    padding: 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 50px;
+    display: block;
+
+}
+
+a:hover {
+    background: #efefef;
+    color: #a1a2a7;
+}
+
+li {
+    float: left;
+}
+
+#last {
+    float: right;
+    padding: 0px 70px;
+}
