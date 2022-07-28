@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+  </head>
+  <body>
+    <h1>Sign uo to the app</h1>
+    <form>
+      <fieldset>
+        <legend>Personal information:</legend>
+        <label>First name:<br>
+          <input type="text" id="fname" name="fname" placeholder="Mickey"><br>
+          <!--я не понял, должен быть текст напечатан или сами обязаны вводить, по-этому сделал самоввод,
+           а то что был в примере исчезающим -->
+        </label>
+        <br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Mouse"><br><br>
+        <!-- я сделал два варианта <label> + <input> для разнообразия -->
+        <label>Self-presentation:<br>
+          <textarea name="comment" cols="30" rows="10">The cat was playing in the garden.</textarea>
+        </label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Car info (the brand):</legend>
+        <label for="cars">
+          <select name="cars" id="cars">
+            <option selected value="Audi">Audi</option>
+            <option selected value="Saab">Saab</option>
+            <option selected value="Fiat">Fiat</option>
+            <option selected value="Volvo">Volvo</option>
+          </select>
+        </label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Choose one:</legend>
+        <label>
+          <input type="radio" id="male" name="gender" value="male" required>Male
+        </label>
+        <br>
+        <label>
+          <input type="radio" id="female" name="gender" value="Female" required>Female
+        </label>
+        <br>
+        <label>
+          <input type="radio" id="other" name="gender" value="Other" required>Other
+        </label>
+        <br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Choose many:</legend>
+        <label>
+          <input type="checkbox" name="bike" value="bike"> I have a bike
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="car" value="car"> I have a car
+        </label>
+      </fieldset>
+      <br>
+      <label>
+        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="cancel" value="Cancel">
+      </label>
+    </form>
+  </body>
+</html>

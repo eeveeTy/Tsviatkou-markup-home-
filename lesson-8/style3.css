@@ -1,0 +1,19 @@
+table, td, th {
+    width: 900px;
+    text-align: center;
+    border-style: solid;
+    border-collapse: collapse;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-color: #d5dbe0;
+}
+
+tr:nth-child(2n) {
+    background: #deecf8;
+}
+
+td:nth-child(2n+3), th:nth-child(2n+3) {
+    background: #f2f2de;
+}
+
