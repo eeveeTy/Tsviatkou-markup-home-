@@ -1,0 +1,66 @@
+label {
+    text-decoration: underline; /* подчеркнул */
+    cursor: pointer; /* при наведении и нажатие появляется указатель */
+}
+
+input {
+    display: none; /* скрыл чекбоксы */
+}
+
+span {
+    color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+label[for="red"] { /* обратился к лейблу с айди красный */
+    color: red; /* поменял цвет текста на красный */
+    margin: 10px; /* задал отступ 0 сверху и 20 по бокам */
+}
+
+label[for="green"] {
+    color: green;
+    margin: 10px;
+}
+
+label[for="blue"] {
+    color: blue;
+    margin: 10px;
+}
+
+
+#blue ~ .blue { /* если выше "class="blue" в одной вложенности" есть "id="blue"" */
+    background-color: blue; /* меняет цвет фона на синий */
+}
+
+#red ~ .red {
+    background-color: red;
+}
+
+#green ~ .green {
+    background-color: green;
+}
+
+#red:checked ~ label[for="red"] { /* При состоянии чикед элемент лейбил с айди ред */
+    opacity: 0.5; /* Становится прозрачным */
+}
+
+#red:checked ~ .red { /* При состоянии чикед все элементы класса ред  */
+    display: none; /* убираются */
+}
+
+#blue:checked ~ label[for="blue"] {
+    opacity: 0.5;
+}
+
+#blue:checked ~ .blue {
+    display: none;
+}
+
+#green:checked ~ label[for="green"] {
+    opacity: 0.5;
+}
+
+#green:checked ~ .green {
+    display: none;
+}

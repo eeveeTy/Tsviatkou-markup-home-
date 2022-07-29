@@ -1,0 +1,54 @@
+nav {
+    margin: 0 auto;
+    text-align: center; /* выравнили по центру */
+    font-family: Arial, Geneva, sans-serif;
+}
+
+ul {
+    margin: 1px;
+    padding: 4px;
+}
+
+li {
+    display: inline;
+    padding: 9px;
+}
+
+.number, .words {
+    color: #a23bd2;
+    background-color: white; /* сугуба на всякий */
+    margin: 2px;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.number {
+    border: solid 1px #dedede;
+    border-radius: 5px;
+}
+
+/* я не знаю как на файле что вы прикрепили, ибо там не показана наводка на Prev и другие элементы данного типа,
+по этому рамку и цветовую гамму в целом делал по видео, может быть не особо точно.
+На сколько я понял, рамки там нету*/
+.words:hover {
+    color: white;
+    background-color: #a13bcf;
+    border-radius: 5px;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+}
+
+.number:hover {
+    background-color: #a13bcf;
+    color: white;
+    border-color: #7c12bc;
+    text-shadow: 1px 1px black; /* цвет тени через пипетку тяжело */
+}
+
+/* Вообщем, тут вроде как нужно поигратся с :disabled, checked, enabled, Но я не понял как */
+body > nav > ul > .number:nth-child(7) {
+    color: white;
+    background-color: #a13bcf ;
+    text-shadow: 1px 1px black;
+    border-color: #7c12bc;
+}
