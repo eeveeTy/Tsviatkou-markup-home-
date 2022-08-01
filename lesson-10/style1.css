@@ -1,0 +1,73 @@
+div {
+    text-align: center;
+    border: 3px solid #ef8224;
+    border-collapse: separate;
+    border-radius: 5px;
+    font-family: sans-serif;
+    width: 250px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 0 2px #cce3ef; /* тень вокруг всего */
+
+    /* Подумать над тенью */
+}
+
+h3 {
+    background-color: #ef8224;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+/* Вообщем, между заголовком и рамкой div, при маштабе, возникает белая полоска (рамка) - я не знаю как её убрать
+хотя не в каждом браузере так, в мозиле всё нормально*/
+
+h4 {
+    font-weight: normal;
+    margin: 13px 0;
+}
+
+p {
+    font-size: 60px;
+    margin: 5px 0 15px 0;
+}
+
+sub, sup {
+    font-size: 15px;
+}
+
+ul {
+    background-color: #eef5fd;
+    list-style-image: url("arrow.png");
+    margin: 0 15px 20px 15px;
+    font-size: 13px;
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: left;
+    opacity: 0.8;
+}
+
+ul > li {
+    padding: 5px 5px 5px 30px;
+    border: 1px solid white;
+}
+
+ul > li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    background-color: #ef8224;
+    color: white;
+    padding: 5px 49px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0 solid;
+    box-shadow: 0 2px #b45503;
+}
+
