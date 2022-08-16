@@ -1,0 +1,59 @@
+body {
+    background: black;
+    color: dodgerblue;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 > span {
+    color: orange;
+}
+
+/* Кдасс "David-Soul" и "Staciya Trolli" абсолютно одинаковые и можно было бы в целом использовать один
+ Но так как конент у них разный, а это главное, я использовал два разных */
+
+div.David-Soul, div.Staciya-Trollio { /* Сам бокс*/
+    width: 360px;
+    background: white;
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    padding: 0 15px;
+}
+
+div.David-Soul > p:first-child, div.Staciya-Trollio > p:first-child { /* Заголовок текста*/
+    text-align: left;
+    font-style: italic;
+    border-bottom: dotted black 3px;
+    padding-bottom: 7px;
+}
+
+div.David-Soul > p:last-child, div.Staciya-Trollio > p:last-child { /* Текст*/
+    color: grey;
+    text-align: left;
+    margin-top: 10px;
+}
+
+div.David-Soul > p:first-child > span, div.Staciya-Trollio > p:first-child > span {
+    float: right;
+}
+
+div.David-Soul {
+    margin-right: 30%;
+}
+
+div.triangle { /* Треугольник*/
+    width: 1px;
+    border: 20px solid;
+    border-color: transparent white transparent transparent;
+    float: right;
+    margin-top: 35px;
+}
+
+img { /* Картинки */
+    width: 115px;
+    float: right;
+    margin-left: 50px;
+}
