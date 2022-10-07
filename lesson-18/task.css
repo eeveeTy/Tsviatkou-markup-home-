@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 70px;
+
+    background: mediumpurple;
+    color: lightblue;
+
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.card__header {
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.card__price {
+    margin-bottom: 10rem;
+    font-size: 2rem;
+}
+
+.card__price_h2, .card__price_p {
+    margin: auto;
+}
+
+.card__content {
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.card__content_type_p {
+    font-size: 1.5rem;
+}
+
+.card__button {
+    background: darkred;
+    color: lightblue;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 230px) {
+    .card__image_by-fly {
+        width: 100%;
+    }
+
+    .card__title_h2 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .card__button {
+        padding: 1rem;
+    }
+}
+
+
+
+
