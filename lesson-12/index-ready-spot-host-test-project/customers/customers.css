@@ -1,62 +1,60 @@
-/* Write your code here */
-/**/
-body { !important; /* добавив  footer вся страница стала чёрнорй, а отыскать и передить не смог*/
-    background-color: white;
-    color: red;
-}
-div.Mike-Statham {
-    clear: right;
+/*1*/
+
+.customer {
+    margin-top: 70px;
 }
 
-div.Mike-Statham > img, div.John-Mellow > img {
-    width: 60%;
-    margin: 100px 0;
-
-    position: relative;
-    box-shadow: 7px 7px 8px 3px #bfbfc0;
+.customer-first > img {
+    float: left;
 }
 
-div.Mike-Statham > img {
-    float: right;
-
-}
-
-div.Mike-Statham > div, div.John-Mellow > div {
-    width: 40%;
-    float: right;
-    margin: 100px 0;
-    padding: 100px; /* Я пытался через позицую и Top%, но он не хотел чё то((*/
-}
-
-div.Mike-Statham > div {
+.customer-first__info {
+    float: left;
     text-align: right;
 }
 
-/* С размером шрифта сложно понять, на каротинке он маленький, но если взять его относительно картинке, то он должен
-быть большой*/
+.customer-first__clear {
+    clear: both;
+}
 
-div.Mike-Statham > div > p:nth-child(1), div.John-Mellow > div > p:nth-child(1) {
+/*2*/
+.customer-second {
+    margin-top: 15rem;
+}
+
+.customer-second > img {
+    float: right;
+}
+
+.customer-second__info {
+    float: right;
+}
+
+.customer-second__clear {
+    clear: both;
+}
+
+/*общее*/
+.customer-first > img, .customer-second > img {
+    width: 60%;
+}
+
+.customer__info {
+    margin: 25rem 1rem;
+}
+
+.customer__info > h3 {
+    margin: 0;
+    font-size: 40px;
     color: red;
-    font-weight: bold;
-    font-size: 60px;
+}
+
+.customer__info > p:first-of-type {
+    color: grey;
+    opacity: 80%;
     margin-bottom: 0;
 }
 
-div.Mike-Statham > div > p:nth-child(2), div.John-Mellow > div > p:nth-child(2) {
-    font-size: 30px;
-    color: #c5c3cd;
-}
-
-div.Mike-Statham > div > p:nth-child(3), div.John-Mellow > div > p:nth-child(3) {
-    font-size: 20px;
-}
-
-div.John-Mellow > img {
-    float: left;
-    margin-top: 100px;
-}
-
-div.John-Mellow > div {
-    float: left;
-    margin-top: 300px;
+.customer__info > p:last-of-type {
+    margin-top: 0;
 }
